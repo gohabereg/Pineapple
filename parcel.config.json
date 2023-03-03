@@ -1,0 +1,7 @@
+{
+  "extends": "@parcel/config-default",
+  "entryPoints": ["src/index.html"],
+  "defaultTargetOptions": {
+    "distDir": "dist"
+  }
+}

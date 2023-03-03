@@ -1,16 +1,26 @@
-@import './reset.scss';
-@import './_vars.scss';
-@import './fonts.scss';
+@import "./reset.scss";
+@import "./_vars.scss";
+@import "./fonts.scss";
 //pages
-@import './pages/error.scss';
-@import './pages/login.scss';
-@import './pages/home.scss';
-@import './pages/profile.scss';
-@import './pages/modals.scss';
-//common
-@import '../../layouts/index.scss';
-@import '../../components/index.scss';
+@import "./pages/error.scss";
+@import "./pages/login.scss";
+@import "./pages/home.scss";
+@import "./pages/profile.scss";
+@import "./pages/modals.scss";
+@import "./pages/registration.scss";
+@import "./pages/message.scss";
 
+// //common
+@import "../../layouts/index.scss";
+@import "../../blocks/index.scss";
+@import "../../components/index.scss";
+
+.border {
+  border: red solid;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
 body {
   font-family: Inter-Regular;
   font-weight: 500;
@@ -23,7 +33,6 @@ body {
 body * {
   font-family: Inter-Regular;
 }
-
 
 .btn-white {
   background-color: var(--color-white);
@@ -78,18 +87,17 @@ button:active {
   outline-offset: 0;
 }
 
-input[type='number']::-webkit-outer-spin-button,
-input[type='number']::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-input[type='number'],
-input[type='number']:hover,
-input[type='number']:focus {
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
   appearance: none;
   -moz-appearance: textfield;
 }
-
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 768px) and (max-width: 1024px) {
   input,
@@ -111,5 +119,3 @@ input[type='number']:focus {
     font-size: 16px;
   }
 }
-
-

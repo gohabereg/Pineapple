@@ -1,22 +1,18 @@
 .modal {
     position: absolute;
-    z-index: 10000;
+    z-index: 100;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: #000000a0;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    & > :nth-child(1n) {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
 }
 
 .modal_box {
+    top: calc(50% - 200px);
+    left: calc(50% - 170px);
+    z-index: 1000;
+    position: absolute;
     width: 340px;
     height: 257px;
     background: var(--color-white);
